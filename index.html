@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Wisuda, [Nama Wisudawan]!</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <style>
+        /* Mengaplikasikan Google Fonts ke seluruh halaman */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Styling tambahan untuk Swiper.js agar tombol navigasi terlihat jelas */
+        .swiper-button-next, .swiper-button-prev {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+        }
+        .swiper-button-next::after, .swiper-button-prev::after {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-900 to-cyan-500 min-h-screen overflow-x-hidden">
+
+    <canvas id="confetti-canvas" class="absolute top-0 left-0 w-full h-full z-0"></canvas>
+
+    <main class="relative z-10 container mx-auto px-6 py-12 text-white text-center">
+
+        <header class="mb-12">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                <span id="typed-output"></span>
+            </h1>
+            <p class="text-lg md:text-xl opacity-80">Kami semua bangga padamu!</p>
+        </header>
+
+        <section class="mb-16">
+            <div data-aos="zoom-in" data-aos-duration="1000">
+                <img src="pp.jpg" alt="Foto Wisudawan atau Capybara Lucu" 
+                     class="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full object-cover border-4 border-white shadow-2xl">
+                <h2 class="mt-6 text-3xl font-bold">Faizatul Mukaromah, S.Kom</h2>
+                <p class="text-lg opacity-80">Lulusan Terbaik Penuh Pesona</p>
+            </div>
+        </section>
+
+        <section class="mb-16" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl font-bold mb-8">Galeri Kenangan Kita 📸</h2>
+            <div class="swiper max-w-3xl mx-auto rounded-lg shadow-xl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="kenangan (1).jpg" alt="Foto Kenangan 1" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="kenangan (2).jpg" alt="Foto Kenangan 2" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="kenangan (3).jpg" alt="Foto Kenangan 3" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="kenangan (4).jpg" alt="Foto Kenangan 4" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="kenangan (5).jpg" alt="Foto Kenangan 5" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="kenangan (6).jpg" alt="Foto Kenangan 6" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="kenangan (7).jpg" alt="Foto Kenangan 7" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="kenangan (8).jpg" alt="Foto Kenangan 8" class="w-full h-full object-cover"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        
+        <section data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl font-bold mb-8">Ucapan Spesial Untukmu 💌</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="Layer 3.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Congrats, Welcome to Reality Club!"</p>
+                    <p class="font-bold text-cyan-300">- Regi anak riau</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="Layer 2.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"selamat faizaa, semoga terkabulkan segala doa baik yang diharapkan"</p>
+                    <p class="font-bold text-cyan-300">- Zildan sadboy</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <img src="Layer 1.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Apel apel apa yang paling manis...???<br>APELagi kalau bukan dek faiz<br><br>Eleh eleh kemayune"</p>
+                    <p class="font-bold text-cyan-300">- Zakaria Imoet dar der dor</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="Layer 4.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Selamat wisuda, Faiza! Terbanglah tinggi dan raih semua bintang, masa depan cerah menantimu."</p>
+                    <p class="font-bold text-cyan-300">- Irsyad arek nyeni</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="Layer 5.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Barakallah fii ilmi, Faiza. Semoga ilmu yang kamu dapatkan menjadi berkah dan bermanfaat bagi banyak orang."</p>
+                    <p class="font-bold text-cyan-300">- Monica M-nya Menawan</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <img src="Layer 6.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Selamat atas kelulusanmu, Faiza! Jangan pernah berhenti bermimpi dan teruslah mengejar cita-citamu setinggi mungkin."</p>
+                    <p class="font-bold text-cyan-300">- Shofa (pusing pajak pati naik 250%)</p>
+                </div>
+
+                 <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="Layer 7.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"AAAA HAPPY GRADUATION BEBEBB🥳🎓. semoga segera menemukan kerjaan yang cocok dan pasangan yang cocok juga. Aamiin🤲🏼✨"</p>
+                    <p class="font-bold text-cyan-300">- Diva istrinya jeamin (GWS)</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="Layer 8.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Izaa, semangat menjalani quarter life! Semoga semakin kuat dan bijak jadi dewasa, sukses selalu ke depannya. Ditunggu kabar baiknya yaaa"</p>
+                    <p class="font-bold text-cyan-300">- Arafat always NT</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <img src="Layer 9.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Terima kasih untuk semua tawa, dukungan, dan bahkan drama tugas-tugas kuliah yang telah kita lalui bersama. kenangan indah kita akan selalu ku ingat. Semoga faizul bahagia dimanapun tempat berada, sukses selalu dan menemukan seseorang yg tepat"</p>
+                    <p class="font-bold text-cyan-300">- Hilda Kusen</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="Layer 10.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Selamat wisuda, Faiza! Akhirnya sampai juga di garis finish yang satu ini🏁 Tapi tahu sendiri kan, ini bukan akhir, cuma pit stop buat lanjut ke perjalanan hidup yang lebih seru. Bangga banget liat dirimu dah nyampe sini, tetap rendah hati dan terus ngegas ya!🚵‍♀"</p>
+                    <p class="font-bold text-cyan-300">- Alfan A-nya anjay</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="Layer 3.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Congrats Faiza atas wisudanya! Terima kasih sudah jadi teman terbaik selama masa perkuliahan sampai sekarang. Banyak suka duka yang kita lewati bareng, dan aku bersyukur bisa punya teman sepertimu. Semoga perjalanan ke depannya penuh kebahagiaan, rezeki lancar, dan semua mimpi bisa diraih"</p>
+                    <p class="font-bold text-cyan-300">- Sultan sang penakluk</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="Layer 11.png" alt="Capybara Icon" class="w-12 h-12 mb-4">
+                    <p class="text-white/90 mb-4">"Happy graduation, Faiza! 🌸 I’m truly proud of you and your journey. Keep trusting the process and always put your trust in Allah. Remember, nothing comes easy, but with patience and prayer, everything will fall into place. May you always bring happiness to your parents, especially your mom ❤"</p>
+                    <p class="font-bold text-cyan-300">- Alda ngawi</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <footer class="mt-16 pt-8 border-t border-white/20">
+            <p class="opacity-70">Dibuat dengan ❤️ untuk teman terbaik kami.</p>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // 1. Inisialisasi AOS
+        AOS.init({
+            once: true, // Animasi hanya berjalan sekali
+            duration: 800
+        });
+
+        // 2. Inisialisasi Typed.js
+        const typed = new Typed('#typed-output', {
+            strings: ['Congratulations!', 'Selamat Wisuda, Faizatul Mukaromah!', 'You Did It! 🎉'],
+            typeSpeed: 70,
+            backSpeed: 40,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|',
+        });
+        
+        // 3. Menjalankan Confetti.js saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('confetti-canvas');
+            const myConfetti = confetti.create(canvas, {
+                resize: true,
+                useWorker: true
+            });
+            
+            myConfetti({
+                particleCount: 200,
+                spread: 180,
+                origin: { y: 0.6 }
+            });
+        });
+
+        // 4. Inisialisasi Swiper.js
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+</html>
